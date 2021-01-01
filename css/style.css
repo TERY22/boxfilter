@@ -1,0 +1,74 @@
+body {
+	background-color: black;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 10px 40px 10px 0;
+	cursor: pointer;
+}
+
+.box {
+	border-radius: 10px;
+	box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
+	min-height: 140px;
+	min-width: calc(22% - 28px);
+	padding: 0 10px;
+	margin: 15px;
+	border-width: 3px;
+	float: left;
+}
+
+.box.blue {
+ 	border: 3px solid blue;
+}
+
+.box.green {
+	border: 3px solid green;
+}
+
+.box.yellow {
+	border: 3px solid yellow;
+}
+
+.box.red {
+	border: 3px solid red;
+}
+
+.text-all {
+	color: white;
+}
+
+.text-blue {
+	color: blue;
+}
+
+.text-green {
+	color: green;
+}
+
+.text-yellow {
+	color: yellow;
+}
+
+.text-red {
+	color: red;
+}
+
+.hide {
+	opacity: 1;
+	animation-name: a1;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes a1 {
+	to {
+		opacity: 0;
+		min-height: 0;
+		min-width: 0;
+		padding: 0;
+		margin: 0;
+		border: 0;
+	}
+}
